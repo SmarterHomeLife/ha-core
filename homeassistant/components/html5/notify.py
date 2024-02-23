@@ -449,10 +449,10 @@ class HTML5NotificationService(BaseNotificationService):
         """Send a message to a user."""
         tag = str(uuid.uuid4())
         payload = {
-            "badge": "/static/images/notification-badge.png",
+            "badge": "/local/favicons/favicon-260x260.png",
             "body": message,
             ATTR_DATA: {},
-            "icon": "/static/icons/favicon-192x192.png",
+            "icon": "/local/favicons/android-chrome-192x192.png",
             ATTR_TAG: tag,
             ATTR_TITLE: kwargs.get(ATTR_TITLE, ATTR_TITLE_DEFAULT),
         }
